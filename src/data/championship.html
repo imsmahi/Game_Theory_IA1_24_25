@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Championnat</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; }
+        h1 { color: #333; }
+        .container { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px #aaa; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+        th { background-color: #333; color: white; }
+        .bold { font-weight: bold; font-size: 18px; }
+        select { padding: 10px; margin: 10px 0; }
+    </style>
+    <script>
+        function showMatches() {
+            var selectedDay = document.getElementById("daySelect").value;
+            document.querySelectorAll(".matchTable").forEach(table => table.style.display = "none");
+            document.getElementById("matches_" + selectedDay).style.display = "table";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>🏆 Championnat Tic-Tac-Toe</h1>
+
+        <h2>📅 Sélectionner une journée</h2>
+        <select id="daySelect" onchange="showMatches()">
+            <option value="1">Journée 1</option><option value="2">Journée 2</option><option value="3">Journée 3</option><option value="4">Journée 4</option><option value="5">Journée 5</option><option value="6">Journée 6</option><option value="7">Journée 7</option><option value="8">Journée 8</option><option value="9">Journée 9</option><option value="10">Journée 10</option><option value="11">Journée 11</option><option value="12">Journée 12</option><option value="13">Journée 13</option><option value="14">Journée 14</option><option value="15">Journée 15</option><option value="16">Journée 16</option><option value="17">Journée 17</option><option value="18">Journée 18</option><option value="19">Journée 19</option><option value="20">Journée 20</option><option value="21">Journée 21</option><option value="22">Journée 22</option><option value="23">Journée 23</option><option value="24">Journée 24</option><option value="25">Journée 25</option><option value="26">Journée 26</option>
+        </select>
+
+        <h2>📋 Liste des matchs</h2>
+        <table id="matches_1" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-20T16:20:08.693Z</td><td>Smahi</td><td class="bold">1 - 3</td><td>Taibi</td></tr>
+<tr><td></td><td>Bekhechi-Hassain</td><td class="bold">0 - 0</td><td>Mezouari</td></tr>
+<tr><td>2025-03-24T00:28:22.936Z</td><td>Mekkaoui</td><td class="bold">3 - 1</td><td>Mekidiche</td></tr>
+<tr><td>2025-03-20T16:21:18.541Z</td><td>Bouziani-Oudjedi</td><td class="bold">2 - 2</td><td>Mekelleche</td></tr>
+<tr><td>2025-03-20T16:21:49.926Z</td><td>Belkhouche-Bouayed</td><td class="bold">2 - 2</td><td>Sabra</td></tr>
+<tr><td>2025-03-21T00:06:14.773Z</td><td>Benyelles</td><td class="bold">1 - 3</td><td>Habi</td></tr>
+<tr><td></td><td>Belarbi-Belarbi</td><td class="bold">0 - 0</td><td>Cherki-Maachou</td></tr></table><table id="matches_2" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td></td><td>Mezouari</td><td class="bold">0 - 0</td><td>Smahi</td></tr>
+<tr><td>2025-03-20T16:22:41.475Z</td><td>Mekidiche</td><td class="bold">1 - 3</td><td>Taibi</td></tr>
+<tr><td>2025-03-20T16:23:03.903Z</td><td>Mekelleche</td><td class="bold">3 - 1</td><td>Bekhechi-Hassain</td></tr>
+<tr><td>2025-03-24T00:28:46.651Z</td><td>Sabra</td><td class="bold">2 - 2</td><td>Mekkaoui</td></tr>
+<tr><td>2025-03-21T00:07:02.345Z</td><td>Habi</td><td class="bold">1 - 3</td><td>Bouziani-Oudjedi</td></tr>
+<tr><td></td><td>Cherki-Maachou</td><td class="bold">0 - 0</td><td>Belkhouche-Bouayed</td></tr>
+<tr><td>2025-03-20T16:23:32.361Z</td><td>Belarbi-Belarbi</td><td class="bold">3 - 1</td><td>Benyelles</td></tr></table><table id="matches_3" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-20T16:24:11.876Z</td><td>Smahi</td><td class="bold">1 - 3</td><td>Mekidiche</td></tr>
+<tr><td></td><td>Mezouari</td><td class="bold">0 - 0</td><td>Mekelleche</td></tr>
+<tr><td>2025-03-20T16:24:44.346Z</td><td>Taibi</td><td class="bold">2 - 2</td><td>Sabra</td></tr>
+<tr><td>2025-03-21T00:07:30.015Z</td><td>Bekhechi-Hassain</td><td class="bold">3 - 1</td><td>Habi</td></tr>
+<tr><td></td><td>Mekkaoui</td><td class="bold">0 - 0</td><td>Cherki-Maachou</td></tr>
+<tr><td>2025-03-20T16:29:13.000Z</td><td>Bouziani-Oudjedi</td><td class="bold">2 - 2</td><td>Belarbi-Belarbi</td></tr>
+<tr><td>2025-03-20T16:29:46.571Z</td><td>Belkhouche-Bouayed</td><td class="bold">3 - 1</td><td>Benyelles</td></tr></table><table id="matches_4" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-20T16:30:16.321Z</td><td>Mekelleche</td><td class="bold">3 - 1</td><td>Smahi</td></tr>
+<tr><td>2025-03-20T16:30:36.687Z</td><td>Sabra</td><td class="bold">3 - 1</td><td>Mekidiche</td></tr>
+<tr><td></td><td>Habi</td><td class="bold">0 - 0</td><td>Mezouari</td></tr>
+<tr><td></td><td>Cherki-Maachou</td><td class="bold">0 - 0</td><td>Taibi</td></tr>
+<tr><td>2025-03-20T16:30:56.400Z</td><td>Belarbi-Belarbi</td><td class="bold">3 - 1</td><td>Bekhechi-Hassain</td></tr>
+<tr><td>2025-03-24T00:29:15.991Z</td><td>Benyelles</td><td class="bold">1 - 3</td><td>Mekkaoui</td></tr>
+<tr><td>2025-03-20T16:48:01.975Z</td><td>Belkhouche-Bouayed</td><td class="bold">2 - 2</td><td>Bouziani-Oudjedi</td></tr></table><table id="matches_5" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-20T16:48:26.008Z</td><td>Smahi</td><td class="bold">1 - 3</td><td>Sabra</td></tr>
+<tr><td>2025-03-21T00:09:04.936Z</td><td>Mekelleche</td><td class="bold">3 - 1</td><td>Habi</td></tr>
+<tr><td></td><td>Mekidiche</td><td class="bold">0 - 0</td><td>Cherki-Maachou</td></tr>
+<tr><td></td><td>Mezouari</td><td class="bold">0 - 0</td><td>Belarbi-Belarbi</td></tr>
+<tr><td>2025-03-20T16:48:51.976Z</td><td>Taibi</td><td class="bold">3 - 1</td><td>Benyelles</td></tr>
+<tr><td>2025-03-20T16:49:14.239Z</td><td>Bekhechi-Hassain</td><td class="bold">3 - 1</td><td>Belkhouche-Bouayed</td></tr>
+<tr><td>2025-03-24T00:29:42.578Z</td><td>Mekkaoui</td><td class="bold">2 - 2</td><td>Bouziani-Oudjedi</td></tr></table><table id="matches_6" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-21T00:09:35.395Z</td><td>Habi</td><td class="bold">3 - 1</td><td>Smahi</td></tr>
+<tr><td></td><td>Cherki-Maachou</td><td class="bold">0 - 0</td><td>Sabra</td></tr>
+<tr><td>2025-03-20T16:49:48.002Z</td><td>Belarbi-Belarbi</td><td class="bold">2 - 2</td><td>Mekelleche</td></tr>
+<tr><td>2025-03-20T16:50:08.365Z</td><td>Benyelles</td><td class="bold">3 - 1</td><td>Mekidiche</td></tr>
+<tr><td></td><td>Belkhouche-Bouayed</td><td class="bold">0 - 0</td><td>Mezouari</td></tr>
+<tr><td>2025-03-20T16:50:32.941Z</td><td>Bouziani-Oudjedi</td><td class="bold">2 - 2</td><td>Taibi</td></tr>
+<tr><td>2025-03-24T00:30:06.671Z</td><td>Mekkaoui</td><td class="bold">3 - 1</td><td>Bekhechi-Hassain</td></tr></table><table id="matches_7" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td></td><td>Smahi</td><td class="bold">0 - 0</td><td>Cherki-Maachou</td></tr>
+<tr><td>2025-03-21T00:13:43.713Z</td><td>Habi</td><td class="bold">1 - 3</td><td>Belarbi-Belarbi</td></tr>
+<tr><td>2025-03-20T16:51:02.822Z</td><td>Sabra</td><td class="bold">3 - 1</td><td>Benyelles</td></tr>
+<tr><td>2025-03-20T16:51:26.884Z</td><td>Mekelleche</td><td class="bold">3 - 1</td><td>Belkhouche-Bouayed</td></tr>
+<tr><td>2025-03-20T16:52:26.561Z</td><td>Mekidiche</td><td class="bold">1 - 3</td><td>Bouziani-Oudjedi</td></tr>
+<tr><td></td><td>Mezouari</td><td class="bold">0 - 0</td><td>Mekkaoui</td></tr>
+<tr><td>2025-03-20T16:52:46.927Z</td><td>Taibi</td><td class="bold">3 - 1</td><td>Bekhechi-Hassain</td></tr></table><table id="matches_8" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-20T16:53:16.777Z</td><td>Belarbi-Belarbi</td><td class="bold">3 - 1</td><td>Smahi</td></tr>
+<tr><td></td><td>Benyelles</td><td class="bold">0 - 0</td><td>Cherki-Maachou</td></tr>
+<tr><td>2025-03-21T00:10:43.931Z</td><td>Belkhouche-Bouayed</td><td class="bold">3 - 1</td><td>Habi</td></tr>
+<tr><td>2025-03-20T16:54:52.073Z</td><td>Bouziani-Oudjedi</td><td class="bold">2 - 2</td><td>Sabra</td></tr>
+<tr><td>2025-03-24T00:30:37.800Z</td><td>Mekkaoui</td><td class="bold">2 - 2</td><td>Mekelleche</td></tr>
+<tr><td>2025-03-20T16:55:19.562Z</td><td>Bekhechi-Hassain</td><td class="bold">3 - 1</td><td>Mekidiche</td></tr>
+<tr><td></td><td>Taibi</td><td class="bold">0 - 0</td><td>Mezouari</td></tr></table><table id="matches_9" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-20T16:55:47.153Z</td><td>Smahi</td><td class="bold">3 - 1</td><td>Benyelles</td></tr>
+<tr><td>2025-03-20T16:56:08.758Z</td><td>Belarbi-Belarbi</td><td class="bold">3 - 1</td><td>Belkhouche-Bouayed</td></tr>
+<tr><td></td><td>Cherki-Maachou</td><td class="bold">0 - 0</td><td>Bouziani-Oudjedi</td></tr>
+<tr><td>2025-03-24T00:30:59.799Z</td><td>Habi</td><td class="bold">1 - 3</td><td>Mekkaoui</td></tr>
+<tr><td>2025-03-20T16:56:26.574Z</td><td>Sabra</td><td class="bold">3 - 1</td><td>Bekhechi-Hassain</td></tr>
+<tr><td>2025-03-20T16:56:53.861Z</td><td>Mekelleche</td><td class="bold">2 - 2</td><td>Taibi</td></tr>
+<tr><td></td><td>Mekidiche</td><td class="bold">0 - 0</td><td>Mezouari</td></tr></table><table id="matches_10" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-20T16:57:22.310Z</td><td>Belkhouche-Bouayed</td><td class="bold">3 - 1</td><td>Smahi</td></tr>
+<tr><td>2025-03-20T16:57:38.253Z</td><td>Bouziani-Oudjedi</td><td class="bold">3 - 1</td><td>Benyelles</td></tr>
+<tr><td>2025-03-24T00:31:34.138Z</td><td>Mekkaoui</td><td class="bold">2 - 2</td><td>Belarbi-Belarbi</td></tr>
+<tr><td></td><td>Bekhechi-Hassain</td><td class="bold">0 - 0</td><td>Cherki-Maachou</td></tr>
+<tr><td>2025-03-21T00:11:12.643Z</td><td>Taibi</td><td class="bold">3 - 1</td><td>Habi</td></tr>
+<tr><td></td><td>Mezouari</td><td class="bold">0 - 0</td><td>Sabra</td></tr>
+<tr><td>2025-03-20T16:58:08.623Z</td><td>Mekidiche</td><td class="bold">1 - 3</td><td>Mekelleche</td></tr></table><table id="matches_11" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-20T16:58:43.122Z</td><td>Smahi</td><td class="bold">1 - 3</td><td>Bouziani-Oudjedi</td></tr>
+<tr><td>2025-03-24T00:32:02.272Z</td><td>Belkhouche-Bouayed</td><td class="bold">2 - 2</td><td>Mekkaoui</td></tr>
+<tr><td>2025-03-20T16:59:11.196Z</td><td>Benyelles</td><td class="bold">3 - 1</td><td>Bekhechi-Hassain</td></tr>
+<tr><td>2025-03-20T16:59:31.697Z</td><td>Belarbi-Belarbi</td><td class="bold">2 - 2</td><td>Taibi</td></tr>
+<tr><td></td><td>Cherki-Maachou</td><td class="bold">0 - 0</td><td>Mezouari</td></tr>
+<tr><td>2025-03-21T00:11:42.550Z</td><td>Habi</td><td class="bold">3 - 1</td><td>Mekidiche</td></tr>
+<tr><td>2025-03-20T16:59:54.153Z</td><td>Sabra</td><td class="bold">2 - 2</td><td>Mekelleche</td></tr></table><table id="matches_12" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-24T00:32:30.570Z</td><td>Mekkaoui</td><td class="bold">3 - 1</td><td>Smahi</td></tr>
+<tr><td>2025-03-20T17:00:48.855Z</td><td>Bekhechi-Hassain</td><td class="bold">1 - 3</td><td>Bouziani-Oudjedi</td></tr>
+<tr><td>2025-03-20T17:01:13.394Z</td><td>Taibi</td><td class="bold">3 - 1</td><td>Belkhouche-Bouayed</td></tr>
+<tr><td></td><td>Mezouari</td><td class="bold">0 - 0</td><td>Benyelles</td></tr>
+<tr><td>2025-03-20T17:01:40.020Z</td><td>Mekidiche</td><td class="bold">2 - 2</td><td>Belarbi-Belarbi</td></tr>
+<tr><td></td><td>Mekelleche</td><td class="bold">0 - 0</td><td>Cherki-Maachou</td></tr>
+<tr><td>2025-03-21T00:12:12.809Z</td><td>Sabra</td><td class="bold">3 - 1</td><td>Habi</td></tr></table><table id="matches_13" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-20T17:02:18.055Z</td><td>Smahi</td><td class="bold">3 - 1</td><td>Bekhechi-Hassain</td></tr>
+<tr><td>2025-03-24T00:32:54.876Z</td><td>Mekkaoui</td><td class="bold">2 - 2</td><td>Taibi</td></tr>
+<tr><td></td><td>Bouziani-Oudjedi</td><td class="bold">0 - 0</td><td>Mezouari</td></tr>
+<tr><td>2025-03-20T17:02:48.688Z</td><td>Belkhouche-Bouayed</td><td class="bold">3 - 1</td><td>Mekidiche</td></tr>
+<tr><td>2025-03-20T17:03:10.725Z</td><td>Benyelles</td><td class="bold">1 - 3</td><td>Mekelleche</td></tr>
+<tr><td>2025-03-20T17:03:36.813Z</td><td>Belarbi-Belarbi</td><td class="bold">2 - 2</td><td>Sabra</td></tr>
+<tr><td></td><td>Cherki-Maachou</td><td class="bold">0 - 0</td><td>Habi</td></tr></table><table id="matches_14" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-24T00:25:19.918Z</td><td>Taibi</td><td class="bold">3 - 1</td><td>Smahi</td></tr>
+<tr><td></td><td>Mezouari</td><td class="bold">0 - 0</td><td>Bekhechi-Hassain</td></tr>
+<tr><td>2025-03-24T00:26:30.239Z</td><td>Mekidiche</td><td class="bold">1 - 3</td><td>Mekkaoui</td></tr>
+<tr><td>2025-03-24T00:27:05.704Z</td><td>Mekelleche</td><td class="bold">2 - 2</td><td>Bouziani-Oudjedi</td></tr>
+<tr><td>2025-03-24T00:27:29.410Z</td><td>Sabra</td><td class="bold">3 - 1</td><td>Belkhouche-Bouayed</td></tr>
+<tr><td>2025-03-24T00:28:00.838Z</td><td>Habi</td><td class="bold">1 - 3</td><td>Benyelles</td></tr>
+<tr><td></td><td>Cherki-Maachou</td><td class="bold">0 - 0</td><td>Belarbi-Belarbi</td></tr></table><table id="matches_15" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td></td><td>Smahi</td><td class="bold">0 - 0</td><td>Mezouari</td></tr>
+<tr><td>2025-03-24T00:33:27.947Z</td><td>Taibi</td><td class="bold">3 - 1</td><td>Mekidiche</td></tr>
+<tr><td>2025-03-24T00:33:47.837Z</td><td>Bekhechi-Hassain</td><td class="bold">1 - 3</td><td>Mekelleche</td></tr>
+<tr><td>2025-03-24T00:34:19.316Z</td><td>Mekkaoui</td><td class="bold">2 - 2</td><td>Sabra</td></tr>
+<tr><td>2025-03-24T00:34:38.002Z</td><td>Bouziani-Oudjedi</td><td class="bold">3 - 1</td><td>Habi</td></tr>
+<tr><td></td><td>Belkhouche-Bouayed</td><td class="bold">0 - 0</td><td>Cherki-Maachou</td></tr>
+<tr><td>2025-03-24T00:34:59.487Z</td><td>Benyelles</td><td class="bold">1 - 3</td><td>Belarbi-Belarbi</td></tr></table><table id="matches_16" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-24T00:35:26.638Z</td><td>Mekidiche</td><td class="bold">1 - 3</td><td>Smahi</td></tr>
+<tr><td></td><td>Mekelleche</td><td class="bold">0 - 0</td><td>Mezouari</td></tr>
+<tr><td>2025-03-24T00:36:12.451Z</td><td>Sabra</td><td class="bold">2 - 2</td><td>Taibi</td></tr>
+<tr><td>2025-03-24T00:36:31.038Z</td><td>Habi</td><td class="bold">1 - 3</td><td>Bekhechi-Hassain</td></tr>
+<tr><td></td><td>Cherki-Maachou</td><td class="bold">0 - 0</td><td>Mekkaoui</td></tr>
+<tr><td>2025-03-24T00:36:55.491Z</td><td>Belarbi-Belarbi</td><td class="bold">2 - 2</td><td>Bouziani-Oudjedi</td></tr>
+<tr><td>2025-03-24T00:37:18.790Z</td><td>Benyelles</td><td class="bold">3 - 1</td><td>Belkhouche-Bouayed</td></tr></table><table id="matches_17" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-24T00:38:20.276Z</td><td>Smahi</td><td class="bold">1 - 3</td><td>Mekelleche</td></tr>
+<tr><td>2025-03-24T00:38:38.756Z</td><td>Mekidiche</td><td class="bold">1 - 3</td><td>Sabra</td></tr>
+<tr><td></td><td>Mezouari</td><td class="bold">0 - 0</td><td>Habi</td></tr>
+<tr><td></td><td>Taibi</td><td class="bold">0 - 0</td><td>Cherki-Maachou</td></tr>
+<tr><td>2025-03-24T00:38:58.557Z</td><td>Bekhechi-Hassain</td><td class="bold">1 - 3</td><td>Belarbi-Belarbi</td></tr>
+<tr><td>2025-03-24T00:39:18.488Z</td><td>Mekkaoui</td><td class="bold">3 - 1</td><td>Benyelles</td></tr>
+<tr><td>2025-03-24T00:39:37.577Z</td><td>Bouziani-Oudjedi</td><td class="bold">3 - 1</td><td>Belkhouche-Bouayed</td></tr></table><table id="matches_18" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-24T00:39:57.777Z</td><td>Sabra</td><td class="bold">3 - 1</td><td>Smahi</td></tr>
+<tr><td>2025-03-24T00:40:14.548Z</td><td>Habi</td><td class="bold">1 - 3</td><td>Mekelleche</td></tr>
+<tr><td></td><td>Cherki-Maachou</td><td class="bold">0 - 0</td><td>Mekidiche</td></tr>
+<tr><td></td><td>Belarbi-Belarbi</td><td class="bold">0 - 0</td><td>Mezouari</td></tr>
+<tr><td>2025-03-24T00:40:45.025Z</td><td>Benyelles</td><td class="bold">1 - 3</td><td>Taibi</td></tr>
+<tr><td>2025-03-24T00:41:06.944Z</td><td>Belkhouche-Bouayed</td><td class="bold">3 - 1</td><td>Bekhechi-Hassain</td></tr>
+<tr><td>2025-03-24T00:41:29.706Z</td><td>Bouziani-Oudjedi</td><td class="bold">2 - 2</td><td>Mekkaoui</td></tr></table><table id="matches_19" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-24T00:41:53.673Z</td><td>Smahi</td><td class="bold">3 - 1</td><td>Habi</td></tr>
+<tr><td></td><td>Sabra</td><td class="bold">0 - 0</td><td>Cherki-Maachou</td></tr>
+<tr><td>2025-03-24T00:42:16.467Z</td><td>Mekelleche</td><td class="bold">2 - 2</td><td>Belarbi-Belarbi</td></tr>
+<tr><td>2025-03-24T00:42:37.720Z</td><td>Mekidiche</td><td class="bold">1 - 3</td><td>Benyelles</td></tr>
+<tr><td></td><td>Mezouari</td><td class="bold">0 - 0</td><td>Belkhouche-Bouayed</td></tr>
+<tr><td>2025-03-24T00:42:59.064Z</td><td>Taibi</td><td class="bold">2 - 2</td><td>Bouziani-Oudjedi</td></tr>
+<tr><td>2025-03-24T00:43:27.341Z</td><td>Bekhechi-Hassain</td><td class="bold">1 - 3</td><td>Mekkaoui</td></tr></table><table id="matches_20" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td></td><td>Cherki-Maachou</td><td class="bold">0 - 0</td><td>Smahi</td></tr>
+<tr><td>2025-03-24T00:43:52.898Z</td><td>Belarbi-Belarbi</td><td class="bold">3 - 1</td><td>Habi</td></tr>
+<tr><td>2025-03-24T00:44:12.922Z</td><td>Benyelles</td><td class="bold">1 - 3</td><td>Sabra</td></tr>
+<tr><td>2025-03-24T00:44:32.622Z</td><td>Belkhouche-Bouayed</td><td class="bold">2 - 2</td><td>Mekelleche</td></tr>
+<tr><td>2025-03-24T00:44:51.511Z</td><td>Bouziani-Oudjedi</td><td class="bold">2 - 2</td><td>Mekidiche</td></tr>
+<tr><td></td><td>Mekkaoui</td><td class="bold">0 - 0</td><td>Mezouari</td></tr>
+<tr><td>2025-03-24T00:45:10.374Z</td><td>Bekhechi-Hassain</td><td class="bold">1 - 3</td><td>Taibi</td></tr></table><table id="matches_21" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-24T00:45:38.124Z</td><td>Smahi</td><td class="bold">1 - 3</td><td>Belarbi-Belarbi</td></tr>
+<tr><td></td><td>Cherki-Maachou</td><td class="bold">0 - 0</td><td>Benyelles</td></tr>
+<tr><td>2025-03-24T00:46:08.445Z</td><td>Habi</td><td class="bold">3 - 1</td><td>Belkhouche-Bouayed</td></tr>
+<tr><td>2025-03-24T00:46:33.702Z</td><td>Sabra</td><td class="bold">2 - 2</td><td>Bouziani-Oudjedi</td></tr>
+<tr><td>2025-03-24T00:46:53.678Z</td><td>Mekelleche</td><td class="bold">2 - 2</td><td>Mekkaoui</td></tr>
+<tr><td>2025-03-24T00:47:12.824Z</td><td>Mekidiche</td><td class="bold">1 - 3</td><td>Bekhechi-Hassain</td></tr>
+<tr><td></td><td>Mezouari</td><td class="bold">0 - 0</td><td>Taibi</td></tr></table><table id="matches_22" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-24T00:47:57.355Z</td><td>Benyelles</td><td class="bold">1 - 3</td><td>Smahi</td></tr>
+<tr><td>2025-03-24T00:48:18.244Z</td><td>Belkhouche-Bouayed</td><td class="bold">2 - 2</td><td>Belarbi-Belarbi</td></tr>
+<tr><td></td><td>Bouziani-Oudjedi</td><td class="bold">0 - 0</td><td>Cherki-Maachou</td></tr>
+<tr><td>2025-03-24T00:48:31.958Z</td><td>Mekkaoui</td><td class="bold">3 - 1</td><td>Habi</td></tr>
+<tr><td>2025-03-24T00:48:54.134Z</td><td>Bekhechi-Hassain</td><td class="bold">1 - 3</td><td>Sabra</td></tr>
+<tr><td>2025-03-24T00:49:26.153Z</td><td>Taibi</td><td class="bold">2 - 2</td><td>Mekelleche</td></tr>
+<tr><td></td><td>Mezouari</td><td class="bold">0 - 0</td><td>Mekidiche</td></tr></table><table id="matches_23" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-24T00:49:49.320Z</td><td>Smahi</td><td class="bold">1 - 3</td><td>Belkhouche-Bouayed</td></tr>
+<tr><td>2025-03-24T00:50:12.636Z</td><td>Benyelles</td><td class="bold">1 - 3</td><td>Bouziani-Oudjedi</td></tr>
+<tr><td>2025-03-24T00:50:32.417Z</td><td>Belarbi-Belarbi</td><td class="bold">2 - 2</td><td>Mekkaoui</td></tr>
+<tr><td></td><td>Cherki-Maachou</td><td class="bold">0 - 0</td><td>Bekhechi-Hassain</td></tr>
+<tr><td>2025-03-24T00:50:54.307Z</td><td>Habi</td><td class="bold">1 - 3</td><td>Taibi</td></tr>
+<tr><td></td><td>Sabra</td><td class="bold">0 - 0</td><td>Mezouari</td></tr>
+<tr><td>2025-03-24T00:51:23.871Z</td><td>Mekelleche</td><td class="bold">3 - 1</td><td>Mekidiche</td></tr></table><table id="matches_24" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-24T00:51:51.749Z</td><td>Bouziani-Oudjedi</td><td class="bold">3 - 1</td><td>Smahi</td></tr>
+<tr><td>2025-03-24T00:52:21.080Z</td><td>Mekkaoui</td><td class="bold">3 - 1</td><td>Belkhouche-Bouayed</td></tr>
+<tr><td>2025-03-24T00:52:40.787Z</td><td>Bekhechi-Hassain</td><td class="bold">3 - 1</td><td>Benyelles</td></tr>
+<tr><td>2025-03-24T00:53:03.003Z</td><td>Taibi</td><td class="bold">2 - 2</td><td>Belarbi-Belarbi</td></tr>
+<tr><td></td><td>Mezouari</td><td class="bold">0 - 0</td><td>Cherki-Maachou</td></tr>
+<tr><td>2025-03-24T00:53:22.455Z</td><td>Mekidiche</td><td class="bold">3 - 1</td><td>Habi</td></tr>
+<tr><td>2025-03-24T00:53:55.788Z</td><td>Mekelleche</td><td class="bold">2 - 2</td><td>Sabra</td></tr></table><table id="matches_25" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-24T00:54:15.410Z</td><td>Smahi</td><td class="bold">1 - 3</td><td>Mekkaoui</td></tr>
+<tr><td>2025-03-24T00:54:37.585Z</td><td>Bouziani-Oudjedi</td><td class="bold">3 - 1</td><td>Bekhechi-Hassain</td></tr>
+<tr><td>2025-03-24T00:55:04.420Z</td><td>Belkhouche-Bouayed</td><td class="bold">2 - 2</td><td>Taibi</td></tr>
+<tr><td></td><td>Benyelles</td><td class="bold">0 - 0</td><td>Mezouari</td></tr>
+<tr><td>2025-03-24T00:56:00.927Z</td><td>Belarbi-Belarbi</td><td class="bold">3 - 1</td><td>Mekidiche</td></tr>
+<tr><td></td><td>Cherki-Maachou</td><td class="bold">0 - 0</td><td>Mekelleche</td></tr>
+<tr><td>2025-03-24T00:56:13.186Z</td><td>Habi</td><td class="bold">1 - 3</td><td>Sabra</td></tr></table><table id="matches_26" class="matchTable" style="display:none;"><tr><th>Date</th><th>Joueur 1</th><th>Score</th><th>Joueur 2</th></tr><tr><td>2025-03-24T00:56:43.284Z</td><td>Bekhechi-Hassain</td><td class="bold">3 - 1</td><td>Smahi</td></tr>
+<tr><td>2025-03-24T00:57:05.063Z</td><td>Taibi</td><td class="bold">2 - 2</td><td>Mekkaoui</td></tr>
+<tr><td></td><td>Mezouari</td><td class="bold">0 - 0</td><td>Bouziani-Oudjedi</td></tr>
+<tr><td>2025-03-24T00:57:25.325Z</td><td>Mekidiche</td><td class="bold">1 - 3</td><td>Belkhouche-Bouayed</td></tr>
+<tr><td>2025-03-24T00:57:54.695Z</td><td>Mekelleche</td><td class="bold">3 - 1</td><td>Benyelles</td></tr>
+<tr><td>2025-03-24T00:58:11.343Z</td><td>Sabra</td><td class="bold">2 - 2</td><td>Belarbi-Belarbi</td></tr>
+<tr><td></td><td>Habi</td><td class="bold">0 - 0</td><td>Cherki-Maachou</td></tr></table>
+
+        <h2>🏅 Classement</h2>
+        <table>
+            <tr>
+                <th>Position</th>
+                <th>Joueur</th>
+                <th>Points</th>
+                <th>Joués</th>
+                <th>Gagnés</th>
+                <th>Perdus</th>
+                <th>Nuls</th>
+                <th>Temps</th>
+                <th>Erreurs</th>
+            </tr>
+            <tr><td>1</td><td>Taibi</td><td>55</td><td>22</td><td>11</td><td>0</td><td>11</td><td>1429 sec</td><td>0</td></tr>
+<tr><td>2</td><td>Sabra</td><td>55</td><td>22</td><td>11</td><td>0</td><td>11</td><td>1462 sec</td><td>0</td></tr>
+<tr><td>3</td><td>Mekelleche</td><td>55</td><td>22</td><td>11</td><td>0</td><td>11</td><td>2737 sec</td><td>0</td></tr>
+<tr><td>4</td><td>Mekkaoui</td><td>55</td><td>22</td><td>11</td><td>0</td><td>11</td><td>4847 sec</td><td>0</td></tr>
+<tr><td>5</td><td>Bouziani-Oudjedi</td><td>54</td><td>22</td><td>10</td><td>0</td><td>12</td><td>1581 sec</td><td>0</td></tr>
+<tr><td>6</td><td>Belarbi-Belarbi</td><td>54</td><td>22</td><td>10</td><td>0</td><td>12</td><td>1903 sec</td><td>0</td></tr>
+<tr><td>7</td><td>Belkhouche-Bouayed</td><td>42</td><td>22</td><td>7</td><td>9</td><td>6</td><td>37547 sec</td><td>0</td></tr>
+<tr><td>8</td><td>Bekhechi-Hassain</td><td>36</td><td>22</td><td>7</td><td>15</td><td>0</td><td>951 sec</td><td>0</td></tr>
+<tr><td>9</td><td>Smahi</td><td>32</td><td>22</td><td>5</td><td>17</td><td>0</td><td>1183 sec</td><td>0</td></tr>
+<tr><td>10</td><td>Benyelles</td><td>32</td><td>22</td><td>5</td><td>17</td><td>0</td><td>23698 sec</td><td>0</td></tr>
+<tr><td>11</td><td>Habi</td><td>30</td><td>22</td><td>4</td><td>18</td><td>0</td><td>1262 sec</td><td>0</td></tr>
+<tr><td>12</td><td>Mekidiche</td><td>28</td><td>22</td><td>2</td><td>18</td><td>2</td><td>23429 sec</td><td>30</td></tr>
+<tr><td>13</td><td>Cherki-Maachou</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0 sec</td><td>0</td></tr>
+<tr><td>14</td><td>Mezouari</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0 sec</td><td>0</td></tr>
+        </table>
+    </div>
+
+    <script>
+        document.getElementById("daySelect").value = "1";
+        showMatches();
+    </script>
+</body>
+</html>
