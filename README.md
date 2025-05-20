@@ -1,3 +1,5 @@
+> Ce projet est maintenu sur la branche master.
+
 # 🎮 Game Theory IA1 2024/2025
 
 Bienvenue ! Ce projet propose une version revisitée et enrichie du jeu **Tic-Tac-Toe**, intégrant des concepts avancés de théorie des jeux et d’intelligence artificielle.  
